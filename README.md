@@ -147,14 +147,6 @@ This Verilog project:
 
 ---
 
-### 🚀 Ideal for:
-
-* Students learning Verilog
-* Demonstrating real-time embedded system logic
-* Adding an FPGA project to your resume
-
----
-
 **Project by:** *Your Name Here*
 **License:** MIT (or specify your license)
 
