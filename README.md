@@ -147,7 +147,6 @@ This Verilog project:
 
 ---
 
-**Project by:** *Your Name Here*
-**License:** MIT (or specify your license)
+**Project by:** *Kourosh Rashidyiyan*
 
 ---
