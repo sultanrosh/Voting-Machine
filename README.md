@@ -147,6 +147,7 @@ This Verilog project:
 
 ---
 
-**Project by:** *Kourosh Rashidyiyan*
+## 👤 Author
+**Kourosh Rashidiyan**
+🗓️ June 2025
 
----
