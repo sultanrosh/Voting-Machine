@@ -1,6 +1,6 @@
-# 🗳️ Verilog Voting Machine on Zynq-7000 SoC – Full Documentation
+# Verilog Voting Machine on Zynq-7000 SoC – Full Documentation
 
-## 📋 Overview
+## Overview
 
 This project implements a **4-button voting machine system in Verilog** for simulation and hardware testing using the **Zynq-7000 ARM/FPGA SoC Development Board**.
 
@@ -16,9 +16,9 @@ The design ensures valid votes are only registered if buttons are held for a spe
 
 ---
 
-## 🧠 How the System Works
+## How the System Works
 
-### 🧹 Module Overview
+### Module Overview
 
 #### `buttonControl`
 
@@ -47,7 +47,7 @@ The design ensures valid votes are only registered if buttons are held for a spe
 
 ---
 
-## 📦 File Structure
+## File Structure
 
 ```
 ├── buttonControl.v        # Validates sustained button press
@@ -60,17 +60,17 @@ The design ensures valid votes are only registered if buttons are held for a spe
 
 ---
 
-## 🛠️ Hardware Requirements
+## Hardware Requirements
 
-* ✅ **Zynq-7000 ARM/FPGA SoC Development Board**
-* ✅ 4 push-buttons (connected to `button1` to `button4`)
-* ✅ 8-bit LED display (for output via `led`)
-* ✅ Clock source (e.g., onboard 50MHz oscillator)
-* ✅ Reset button
+* **Zynq-7000 ARM/FPGA SoC Development Board**
+* 4 push-buttons (connected to `button1` to `button4`)
+* 8-bit LED display (for output via `led`)
+* Clock source (e.g., onboard 50MHz oscillator)
+* Reset button
 
 ---
 
-## 🚦 Inputs and Outputs
+## Inputs and Outputs
 
 | Signal      | Direction | Width | Description                           |
 | ----------- | --------- | ----- | ------------------------------------- |
@@ -82,7 +82,7 @@ The design ensures valid votes are only registered if buttons are held for a spe
 
 ---
 
-## 🧪 Testbench Explanation (`testbench.v`)
+## Testbench Explanation (`testbench.v`)
 
 The simulation testbench performs the following:
 
@@ -91,7 +91,7 @@ The simulation testbench performs the following:
 * Switches between voting and view mode
 * Uses `#5`, `#10`, `#200` delays to simulate real-world button holding and release timing
 
-### 🔁 Example Time Delay:
+### Example Time Delay:
 
 ```verilog
 #5 reset = 0; mode = 0; button1 = 1;
@@ -104,7 +104,7 @@ This line means: "Wait 5 simulation time units, then apply the input values."
 
 ---
 
-## 🔌 Hardware Deployment (Zynq-7000)
+## Hardware Deployment (Zynq-7000)
 
 ### 1. **Synthesize and Implement**
 
@@ -128,7 +128,7 @@ This line means: "Wait 5 simulation time units, then apply the input values."
 
 ---
 
-## 💡 Notes
+## Notes
 
 * The system **ignores simultaneous button presses** — only the first `else if` vote gets logged.
 * **Clock frequency** affects timing: for a 50MHz clock, 10 cycles = 200ns. To make it human-pressable, increase the counter threshold (e.g., 1,000,000 cycles for \~20ms).
@@ -136,7 +136,7 @@ This line means: "Wait 5 simulation time units, then apply the input values."
 
 ---
 
-## 🏁 Final Summary
+## Final Summary
 
 This Verilog project:
 
@@ -147,7 +147,7 @@ This Verilog project:
 
 ---
 
-## 👤 Author
+## Author
 **Kourosh Rashidiyan**
-🗓️ June 2025
+**June 2025**
 
